@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahmi Zuhri - About</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="images/icon.jpg">  
+</head>
+<body>
+    
+    <div class="nav-container">
+        <header>
+            <a  href="images/Asset 2.png"></a> 
+            <nav>
+                <ul>
+                    <div class="under">
+                    <li><a href="index.html">About</a></li>
+                </div>
+                    <li><a href="index2.html">Works</a></li>
+                    <li><a href="index3-link.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero-container">
+        
+        <div class="content">
+            <h1 class="stagger1">I'm Rhendi</h1>
+            <p class="job stagger1">Freelance Illustrator</p>
+        </div>
+
+        <div class="hero-design">
+            <img src="images/hero.png" alt="hero"></a>
+        </div>
+        
+
+        
+    </div>
+    
+    <section class="about-container">
+        <div class="top">
+            <div class="top transition2">
+                <p class="subtitle">Building remarkable brand & design</p>
+                <p class="subtitle">driven by thoughtful strategies</p>
+                    
+                <img class="profile" src="images/profile.png" alt="profile"></a>
+                <p class="about-desc">Hello!, I am Fahmi Zuhri, a graphic designer based in Indonesia. I Build a remarkable brand & design driven by thoughtful strategies.</p>
+
+                <p class="about-desc">I do Branding and Graphic Design by considering the effectiveness of communication, relevance, and accuracy of creative thinking in solving the problem.
+                    
+                    I Believed that design is an important aspect of a brand and its product. it could make them Soulful and communicative.</p>
+                    
+                <p class="about-desc"> I have collaborated with a small-medium brand to grow them for the next.</p>
+            </div>
+        </div>
+    
+
+    <section class="needhelp-container">
+        <a href="https://www.instagram.com/fahmizuhri_/" class="messageme-btn">Instagram</a>
+    </section>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+        var tl = gsap.timeline();
+
+        tl.from('.hero-container', {
+            y: '-30',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=2.2")
+        tl.from('.hero-design',{
+            opacity: 0, 
+            y:50, 
+            ease: Power4.easeOut, 
+            duration: 1
+        }, "-=2")
+        tl.from('.transition2', {
+            ScrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+    </script>
+</body>
+</html>
